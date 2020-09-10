@@ -40,7 +40,7 @@ extension Trans on String {
   }
 
   String trArgs([List<String> args]) {
-    var key = tr;
+    var key = getTr;
     if (args != null) {
       for (final arg in args) {
         key = key.replaceFirst(RegExp(r'%s'), arg.toString());
