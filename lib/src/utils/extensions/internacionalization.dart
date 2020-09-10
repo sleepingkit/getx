@@ -1,7 +1,7 @@
 import '../../core/get_main.dart';
 
 extension Trans on String {
-  String get tr {
+  String get getTr {
     // Returns the key if locale is null.
     if (Get.locale?.languageCode == null) return this;
 
